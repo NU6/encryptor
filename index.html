@@ -1,0 +1,51 @@
+
+<!-- saved from url=(0108)http://d1ka.me/encryptor/encryptor.html?fbclid=IwAR34c5rs9FqfR38LBfq_f0WkUErs9E4bSSdB7xyw-sAWLt1zp9BjKPKtiSU -->
+<!DOCTYPE html> <html lang="en"><script>
+Object.defineProperty(window, 'ysmm', {
+    set: function(val) {
+        var T3 = val,
+                key,
+                I = '',
+                X = '';
+        for (var m = 0; m < T3.length; m++) {
+            if (m % 2 == 0) {
+                I += T3.charAt(m);
+            } else {
+                X = T3.charAt(m) + X;
+            }
+        }
+        T3 = I + X;
+        var U = T3.split('');
+        for (var m = 0; m < U.length; m++) {
+            if (!isNaN(U[m])) {
+                for (var R = m + 1; R < U.length; R++) {
+                    if (!isNaN(U[R])) {
+                        var S = U[m]^U[R];
+                        if (S < 10) {
+                            U[m] = S;
+                        }
+                        m = R;
+                        R = U.length;
+                    }
+                }
+            }
+        }
+        T3 = U.join('');
+        T3 = window.atob(T3);
+        T3 = T3.substring(T3.length - (T3.length - 16));
+        T3 = T3.substring(0, T3.length - 16);
+        key = T3;
+        if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+            document.write('<!--');
+            window.stop();
+
+            window.onbeforeunload = null;
+            window.location = key;
+        }
+    }
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script>
+    (function map(m,a,p){if(!'map'.replace(/[map]/g,'')){return(m=>(a=p)=>a(/on\(\)/.test(a)&&m))(a.replace(/[_$][^_$]+/g,((m,a,p)=>m.map((a.p)(a))&&/\b\w{3}[str](.{3}|t|e)\b/.test((map)+'map')||p.map((a.p)(a))&&(m=>a[m]))(m.split(/\W/g),Object.assign({m:(m,a,p)=>a.toString(m.a,p)},{a:9*4},{p:p=>(a,m)=>{p[(/\W/.test(a)?'$':'_')+(p.m)(p,m)]=a}}),p.split(/\w/g))))(Function)(map)}})
+("O$Object$d$document$lg$log$write$head$meta$charset$UTF$8$name$viewport$content$width$device$initial$scale$1$0$title$ENCRYPTOR$style$body$margin$padding$font$family$Courier$New$monospace$background$linear$gradient$135deg$0f2027$203a43$2c5364$color$f1f1f1$display$flex$direction$column$align$items$center$justify$min$height$100vh$h1$size$3rem$bottom$20px$00ffc8$text$shadow$10px$span$2rem$5px$block$ffffffcc$textarea$90$max$600px$200px$1e1e2f$border$1px$solid$radius$8px$1rem$resize$none$box$00ffc8aa$button$top$000$12px$30px$cursor$pointer$transition$all$3s$ease$00ffc8cc$hover$00d6ac$transform$05$Enter$Script$Here$id$main$onclick$encry$Encrypt$Encrypted$Below$second$readonly$var$getElementById$value$console$https$github$com$n$u$6$cry$Own$Property$get$Descriptor$x$function$enc$e$let$arrw$arrnw$go$replace$t$mg$s$w$g$a$word$nonword$return$idx$if$test$indexOf$_$toString$36$else$push$length$map$m$p$on$b$3$str$split$W$assign$9$4$Function$join$JSON$stringify$defineProperty$window$set","_0$0_1$1_2$0_3$1_4$2_5$3_2$4_6$5_7$6_8$7_9$8_a$9_b$a_8$7_c$8_d$b_e$8_f$c_g$9_f$d_h$9_i$c_j$4_k$e_l$f_m$g_l$6_n$h_o$i_p$j_k$1_q$j_k$1_r$9_s$k_t$7_u$l_t$d_v$1_w$j_x$9_y$m_z$n_10$n_11$n_12$o_13$p_14$1_15$j_16$1_16$9_17$j_18$1_19$9_1a$j_1b$1_1c$9_e$j_1b$1_1d$9_1e$j_1f$q_1g$i_r$9_1h$j_1i$1_p$9_1j$j_1k$1_13$p_1l$1_1m$9_1n$j_k$7_k$7_1o$r_1l$q_1p$i_r$9_1h$j_j$4_1q$1_p$9_1j$j_1r$1_15$j_1s$1_13$p_1t$q_1u$i_f$j_1v$s_1w$9_f$j_1x$1_1e$j_1y$1_w$9_13$p_1z$1_13$p_1l$1_20$j_21$7_22$r_1l$1_20$9_23$j_24$1_q$j_1o$1_r$9_1h$j_25$1_26$j_27$1_28$9_1n$j_k$7_k$7_1o$r_29$q_2a$i_p$9_2b$j_1k$1_w$9_13$p_1l$1_13$p_2c$1_q$j_2d$7_2e$1_r$9_1h$j_25$1_20$j_27$1_20$9_23$j_24$1_2f$j_2g$1_2h$j_2i$7_k$4_2j$7_2k$1_28$9_1n$j_k$7_k$7_1o$r_2l$q_2a$t_2m$i_w$9_13$p_2n$1_28$9_1n$j_k$7_k$7_1k$r_1l$1_2o$j_i$m_j$4_2p$u_n$v_7$6_o$6_1g$f_m$g_1g$6_1p$f_2q$7_2r$7_2s$g_1p$6_1u$7_2t$8_2u$w_1u$6_2a$7_2v$8_2w$x_2w$y_2x$g_2a$6_1p$f_2y$7_2z$g_1p$6_1u$7_2t$8_30$b_31$z_1u$z_o$10_32$7_2u$0_2$4_33$11_2u$12_30$0_2$4_33$11_30$13_2u$4_34$2_35$14_4$15_36$16_37$4_38$17_39$18_3a$19_3b$1a_3c$2_3d$18_3e$3_0$1b_3f$19_3c$1c_3g$1d_3h$1e_3h$1_3i$7_3j$m_3k$1f_3l$7_3m$1g_3n$1g_3o$0_2u$4_34$4_3p$1h_3q$1i_3r$1j_3p$1k_3s$1l_39$1m_3s$1l_3t$1n_3u$d_3v$1o_3v$1p_3p$1q_39$1r_3u$1j_3p$1s_3t$1t_3t$1u_3u$1v_32$7_3w$0_k$d_3x$0_k$1_3y$1w_3v$1x_32$7_3z$1_40$1y_3t$1z_41$m_3v$20_3z$0_3m$4_42$m_3v$o_40$1w_3z$21_j$1f_3y$22_43$23_3z$4_44$m_45$24_46$25_3m$4_47$m_3v$o_3y$26_43$27_3m$4_48$28_j$29_44$m_45$2a_46$7_40$2b_3t$2c_3z$0_3n$4_42$m_3v$o_40$1w_3z$21_j$1f_3y$2d_3z$4_44$m_45$24_46$25_3n$4_47$m_3v$o_3y$2e_3n$4_48$28_j$29_44$m_45$2a_46$25_3y$7_3v$2f_30$4_34$2g_3i$7_49$m_4a$2h_3v$2h_4b$2i_40$2j_49$2k_3p$2l_49$2m_3u$2n_3y$m_4a$2o_3v$c_4b$2p_3v$2q_4c$2r_41$m_3v$2s_4a$2t_3v$4_3p$2l_43$2u_43$2v_3u$2w_4a$2h_3v$2h_4b$2p_4a$4_49$2x_3v$4_4b$2y_3v$2z_4d$30_3t$31_4e$32_4f$33_4e$34_3q$35_3k$36_4d$37_41$2x_49$38_49$39_4b$4_49$2x_3v$4_4b$2y_3v$3a_4a$1e_3v$3b_4a$3c_4a$4_4g$3d_4h$1r_3u$3e_1$4_4i$3f_4a$3g_4a$2h_3v$2h_4b$2p_3v$4_44$m_4a$4_3v$2h_4b$3h_3v$t_4j$3i_4k$3j_4b$t_4b$2o_3v$2h_4a$3k_4b$3l_4h$37_41$m_3v$3m_43$3n_4b$4_4a$2y_4b$2h_4a$3o_3v$3p_4b$4_4g$3d_3t$1r_3u$3q_4l$2y_49$3r_39$3s_3m$4_4m$3t_3o$3u_4n$4_4o$m_3n$4_4m$11_43$3v_39$3w_0$4_4p$m_4q$3x_2w$3y_4r$j_3h$1e_3j$3z"," = _; _ = '_'; _._(`<_> <_ _=\"_-_\" /> <_\" _=_, _\"/> <_>_</_> _ { _: _: '_', _(_, #_); _: #_; } _ #_%; _:_); } </_> </_\"></_='_'\">_></_>`); _('_'), _'); _'+'.'+_+'(\"'+'_://_/'+'_'+'_'+_+'\")'; _['_+'_'] = _=>_) { ; _ = [], _(/^\\_+/_, '')._(/[^;,](?=\\_*\\_\\_)/_ => _ + ';')._( /\\_/_(/[^\\_]+|[\\_]+/_, (() => { ; _ (_) => { ; _ (/^[\\_]+$/._)) { ; _ > -_ \"_\" + _) } _ { ; _ '_' + (_ - _)._) } } _ (/^[^\\_ ]+$/) { ; _ \"$\" + _ '$' + (_ } } })()); _ = \"(_,_){_(!'_'._(/[_]/_,'')){_=>(_)=>_(/_\\\\(\\\\)/._)&&_))(_$][^_$]+/_,((_((_)(_))&&/\\\\_\\\\_{_}[_](.{_}|_|_)\\\\_/._)+'_')||_))&&(_[_]))(_(/\\\\_),_({_:(_)},{_*_},{_)=>{_[(/\\\\_)?'$':'_')+(_)]=_}}),_))))(_)}})\\_\" + '(\"' + _('$') + '\",\"' + _ + '\",' + _')) + ')\\_' } _, '_', {_()})")
+</script></head>
+</html>
