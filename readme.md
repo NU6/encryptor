@@ -48,4 +48,4 @@
 
 ## 🚀 **Ready to protect your JavaScript code?** 
 
-click here : https://encryptorjs.netlify.app/
+Are you ready to encrypt your code? [click here](https://encryptorjs.netlify.app/)
